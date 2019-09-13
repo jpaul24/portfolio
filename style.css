@@ -1,6 +1,10 @@
 @import "https://fonts.googleapis.com/css?family=Arimo:400,700|Source+Code+Pro:400,700,900&display=swap";
 @import "landing.css";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Arimo', sans-serif;
 }
@@ -8,7 +12,6 @@ body {
   background: none;
   color: white;
 }
-
 .section-back {
   background: url('images/sil-down.jpeg');
   background-image: cover;
@@ -22,24 +25,20 @@ body {
   height: 100vh;
 }
 
-.content {
-  width: 90%;
-  display: flex;
-  justify-content: flex-end;
-}
-.header {
-  color: rgba(250, 250, 250, 0.9);
-  margin-top: 25%;
-  margin-left: 40px;
-  text-align: right;
-}
-.header h1 {
-  font-size: 124px;
+.about-me {
+  text-align: center;
 }
 .my-container {
   margin: 0 auto;
   width: 70%;
   height: 100vh;
+}
+.section-empty {
+  height: 20%;
+}
+
+.section-empty2 {
+  height: 20%
 }
 
 @media only screen and (max-width: 800px) {
@@ -67,6 +66,11 @@ body {
   .btn-light {
     font-size: 15px;
   }
+  .my-container {
+  margin: 0 auto;
+  width: 95%;
+  height: 100vh;
+}
 }
 
 @media only screen and (max-width: 360px) {
@@ -83,5 +87,10 @@ body {
   .more-info {
     margin-top: 120%;
     font-size: 20px;
+  }
+  .my-container {
+    margin: 0 auto;
+    width: 95%;
+    height: 100vh;
   }
 }
