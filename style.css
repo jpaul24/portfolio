@@ -1,12 +1,11 @@
-@import "";
+@import "https://fonts.googleapis.com/css?family=Arimo:400,700|Source+Code+Pro:400,700,900&display=swap";
+@import "landing.css";
 
-.page-banner {
-  background-image: url('images/smoke.jpeg');
-  background-size: cover;
-  background-position: center;
-  height: 70vh;
-  padding: 40px;
+body {
+  font-family: 'Arimo', sans-serif;
 }
+
+
 .content {
   width: 90%;
   display: flex;
@@ -14,31 +13,57 @@
 }
 .header {
   color: rgba(250, 250, 250, 0.9);
-  margin-top: 18%;
+  margin-top: 25%;
   margin-left: 40px;
+  text-align: right;
 }
 .header h1 {
-  font-size: 120px;
+  font-size: 124px;
+}
+.my-container {
+  margin: 0 auto;
+  width: 70%;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 800px) {
+
 }
 
 @media only screen and (max-width: 600px) {
-  .page-banner {
-    padding-right: 0;
+  video {
+    display: none;
   }
-  .header {
-    margin-top: 70%;
-    margin-left: 90px;
+  .title-header {
+    font-size: 30px;
+    top: 40%;
   }
   .header h1 {
-  font-size: 60px;
-}
+    font-size: 60px;
+  }
+  .more-info {
+    margin-top: 140%;
+  }
+  .job-title {
+    font-size: 20px;
+  }
+  .btn-light {
+    font-size: 15px;
+  }
 }
 
 @media only screen and (max-width: 360px) {
-  .header {
-    margin-top: 70%;
+  video {
+    display: none;
+  }
+  .title-header {
+    font-size: 30px;
   }
   .header h1 {
     font-size: 44px;
+  }
+  .more-info {
+    margin-top: 120%;
+    font-size: 20px;
   }
 }
