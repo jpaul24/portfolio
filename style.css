@@ -4,7 +4,23 @@
 body {
   font-family: 'Arimo', sans-serif;
 }
+.btn-light {
+  background: none;
+  color: white;
+}
 
+.section-back {
+  background: url('images/sil-down.jpeg');
+  background-image: cover;
+  background-position: center;
+  height: 100vh;
+}
+.section-back2 {
+  background: url('images/sil-up.jpeg');
+  background-image: cover;
+  background-position: center;
+  height: 100vh;
+}
 
 .content {
   width: 90%;
@@ -33,6 +49,7 @@ body {
 @media only screen and (max-width: 600px) {
   video {
     display: none;
+    object-fit: none;
   }
   .title-header {
     font-size: 30px;
@@ -55,6 +72,7 @@ body {
 @media only screen and (max-width: 360px) {
   video {
     display: none;
+    object-fit: none;
   }
   .title-header {
     font-size: 30px;
