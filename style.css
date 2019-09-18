@@ -1,5 +1,7 @@
 @import "https://fonts.googleapis.com/css?family=Arimo:400,700|Source+Code+Pro:400,700,900&display=swap";
 @import "landing.css";
+@import "dotnav.css";
+@import "fluid-gallery.css";
 
 html {
   scroll-behavior: smooth;
@@ -29,6 +31,10 @@ h1, h2, h3, h4, h5 {
   background: linear-gradient(#595959, #666666, #737373, #808080);
   height: 100vh;
 }
+.section-back4 {
+  background: linear-gradient(#808080, #8c8c8c, #999999, #a6a6a6);
+  height: 40vh;
+}
 .section-margin {
   margin-top: 100px;
 }
@@ -54,10 +60,6 @@ h1, h2, h3, h4, h5 {
   box-shadow: 0 1px 3px rgba(0,0,0,0.3);
   border: white 5px solid;
 }
-
-.work {
-  height: 700px;
-}
 .headers-sub {
   color: white;
   font-weight: bold;
@@ -68,14 +70,62 @@ h1, h2, h3, h4, h5 {
   color: white;
   text-align: left;
   margin: 30px 0 50px 0;
-  width: 70%;
 }
 .about-section p {
   margin-bottom: 30px;
 }
+.row-images {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.link1 {
+  color: white;
+  font-size: 40px !important;
+  padding-right: 14px;
+}
+
+.card-skills {
+  position: relative;
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  border-radius: 0;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 30px;
+}
+.card-skills-info {
+  text-align: left;
+  padding: 20px 0;
+}
+
+.each-div div {
+  padding: 10px 0;
+}
+.fa-all {
+  padding-right: 20px;
+  font-size: 24px;
+}
 
 @media only screen and (max-width: 800px) {
-
+  .column {
+      flex: 50%;
+      max-width: 50%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -123,6 +173,26 @@ h1, h2, h3, h4, h5 {
     font-size: 32px;
     margin-bottom: 20px;
   }
+  #navbar {
+    display: none;
+  }
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column-no {
+    display: none;
+  }
+  .fa-all {
+    padding-right: 10px;
+    font-size: 16px;
+  }
+  .card-skills-info {
+    font-size: 12px;
+  }
+  .section-back4 {
+    height: 100vh;
+  }
 }
 
 @media only screen and (max-width: 360px) {
@@ -163,5 +233,14 @@ h1, h2, h3, h4, h5 {
   .headers-sub {
     font-size: 32px;
     margin-bottom: 20px;
+  }
+  #navbar {
+    display: none;
+  }
+  .column-no {
+    display: none;
+  }
+  .section-back4 {
+    height: 100vh;
   }
 }
