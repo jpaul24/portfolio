@@ -8,37 +8,70 @@ html {
 body {
   font-family: 'Arimo', sans-serif;
 }
+h1, h2, h3, h4, h5 {
+  font-family: 'Source Code Pro', monospace;
+}
 .btn-light {
   background: none;
   color: white;
 }
 .section-back {
-  background: url('images/sil-down.jpeg');
-  background-image: cover;
-  background-position: center;
-  height: 100vh;
-}
-.section-back2 {
-  background: url('images/sil-up.jpeg');
-  background-image: cover;
-  background-position: center;
+  background: linear-gradient(black, #0d0d0d, #1a1a1a, #262626, #333333);
   height: 100vh;
 }
 
+.section-back2 {
+  background: linear-gradient(#333333, #404040, #4d4d4d, #595959);
+  height: 100vh;
+}
+
+.section-back3 {
+  background: linear-gradient(#595959, #666666, #737373, #808080);
+  height: 100vh;
+}
+.section-margin {
+  margin-top: 100px;
+}
+.about {
+  padding-top: 100px;
+}
 .me {
   text-align: center;
 }
 .my-container {
   margin: 0 auto;
-  width: 70%;
+  width: 80%;
   height: 100vh;
 }
-.section-empty {
-  height: 20%;
+
+.image-container {
+  width: 100%;
+}
+.image-me {
+  width: 70%;
+  margin: 30px 0 50px 0;
+  opacity: 0.8;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  border: white 5px solid;
 }
 
-.section-empty2 {
-  height: 20%
+.work {
+  height: 700px;
+}
+.headers-sub {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.about-section {
+  color: white;
+  text-align: left;
+  margin: 30px 0 50px 0;
+  width: 70%;
+}
+.about-section p {
+  margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -49,6 +82,9 @@ body {
   video {
     display: none;
     object-fit: none;
+  }
+  body {
+    width: 100vw;
   }
   .title-header {
     font-size: 30px;
@@ -67,10 +103,26 @@ body {
     font-size: 15px;
   }
   .my-container {
-  margin: 0 auto;
-  width: 95%;
-  height: 100vh;
-}
+    margin: 0 auto;
+    width: 90%;
+    height: 100vh;
+  }
+  .about {
+    padding-top: 40px;
+  }
+  .about-desc {
+    display: flex;
+    justify-content: center;
+    margin-top: -55px;
+  }
+  .about-section {
+    font-size: 12px;
+    text-align: center;
+  }
+  .headers-sub {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (max-width: 360px) {
@@ -90,7 +142,26 @@ body {
   }
   .my-container {
     margin: 0 auto;
-    width: 95%;
+    width: 90%;
     height: 100vh;
+  }
+  .about {
+    padding-top: 40px;
+  }
+  .about {
+    padding-top: 40px;
+  }
+  .about-desc {
+    display: flex;
+    justify-content: center;
+    margin-top: -55px;
+  }
+  .about-section {
+    font-size: 12px;
+    text-align: center;
+  }
+  .headers-sub {
+    font-size: 32px;
+    margin-bottom: 20px;
   }
 }
